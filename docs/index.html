@@ -5,10 +5,10 @@
     <title>Sign-Up/Login Form</title>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="templates/css/normalize.css">
 
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="templates/css/style.css">
 
     
     
@@ -178,7 +178,7 @@
       socket.on('login_success', function(data){
         if(alert(data.msg)){}
         else
-          window.location.href="/user";
+          window.location.href="/templates/user";
       });
       socket.on('failure',function(data){
         if(window.alert(data.msg)){}
